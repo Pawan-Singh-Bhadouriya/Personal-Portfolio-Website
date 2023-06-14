@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src=https://kit.fontawesome.com/20f528de9a.js crossorigin=”anonymous”></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p><span>P</span>awan.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About Me</a> </li>
+                    <li><a href="#services">Services</a> </li>
+                    <li><a href="#portfolio">Portfolio</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm<br><span>Pawan</span> Singh Bhadouriya<br>from Indore.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image3.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Currently I am a student and I always eager to learn new things.I am a self motivated person and
+                        I love to design websites and I am looking forward more opportunites to work in the domain of
+                        web development. I also have a Knowledge of programming lanugages like c and c++</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience') ">Experience</p>
+                        <p class="tab-links" onclick="opentab('education') ">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front end Web Development</li>
+                            <li><span>C Programming</span><br>Basic knowledge of C </li>
+                            <li><span>C++ Programming</span><br>Basic knowledge of C++ </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Front end Web Development internship at Oasis Infobytes</li>
+                            <li><span>2023</span><br>Front end Web Development internship at Bharat Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Current</span><br>Pursuing MCA from International Institute of Professional
+                                Studies,Davv</li>
+                            <li><span>2020-2021</span><br>Completed 12th standards from The New Green Field Public
+                                Academy with 83.4%</li>
+                            <li><span>2018-2019</span><br>Completed 10th standards from The New Green Field Public
+                                Academy with 79% </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------services------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Currently i am rookie not a professional web developer but yes i have the knowledge that is
+                        required for building a websites. I am very well aware about the HTML, CSS and Java-Script. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>C Programming</h2>
+                    <p>I also know C language by using which i can make projects . </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>C++ Programming</h2>
+                    <p>I also know C++ language by using which i can make projects . </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>Handwritten Notes Website</h3>
+                        <p>This website contans my handwritten notes for the student of BCA/MCA/BTECH/MTECH</p>
+                        <a href="https://pawan-singh-bhadouriya.github.io/Notes-Website/notes.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>Temperature convertor wesite</h3>
+                        <p>This website basically converts one temperature into another</p>
+                        <a href="https://pawan-singh-bhadouriya.github.io/Temperature-Convertor/index.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Basic Landing Page </h3>
+                        <p>This is a basic landing page created using HTML and CSS</p>
+                        <a href="Landig Page (pawan-singh-bhadouriya.github.io)"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+<!-- ---------Contact--------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> pawansingh2m4@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href=" https://www.instagram.com/_.pawan_2m4._?r=nametag"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Pawan-Singh-Bhadouriya"> <i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pawan-singh-bhadouriya-376b85261"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="pdf/Pawan's Resume.pdf" class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Pawan Singh Bhadouriya</p>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+</body>
+
+</html>

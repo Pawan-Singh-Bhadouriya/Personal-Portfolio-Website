@@ -1,0 +1,467 @@
+*{ 
+    Font-family: ‘Nunito’, sans-serif; 
+    Margin: 0px; 
+    Padding: 0px; 
+    Box-sizing: border-box; 
+    Border: none; 
+    Text-decoration: none; 
+    Outline: none; 
+    Text-transform: capitalize; 
+    Transition: all .2s linear; 
+} 
+ 
+Html{ 
+    Font-size: 62.5%; 
+    Overflow-x: hidden; 
+} 
+Body{ 
+    Background: #111; 
+    Padding-left: 35rem; 
+    Overflow-x: hidden; 
+} 
+ 
+/* -----------------------------------header section------------------------------------- */ 
+Header{ 
+    Position: fixed; 
+    Top: 0; 
+    Left: 0; 
+    z-index: 1000; 
+    height: 100%; 
+    width: 35rem; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-flow: column; 
+    background: #1a1a1a; 
+    text-align: center; 
+} 
+Header .user img{ 
+    Height: 17rem; 
+    Width: 17rem; 
+    Object-fit: cover; 
+    Border-radius: 50%; 
+    Margin-bottom: 1rem; 
+    Border: .7rem solid rgb(255, 255, 17); 
+} 
+Header .user h3{ 
+    Font-size: 40px; 
+    Color: #fff; 
+} 
+Header .user p{ 
+    Font-size: 25px; 
+    Color: #eee; 
+} 
+Header .navbar{ 
+    Width: 80%; 
+} 
+Header .navbar ul{ 
+    Padding: 10px; 
+} 
+Header .navbar ul li{ 
+    List-style: none; 
+} 
+Header .navbar ul li a{ 
+    Display: block; 
+    Padding: 10px; 
+    Margin: 20px 0px; 
+    Background: #333; 
+    Color: #fff; 
+    Font-size: 20px; 
+    Border-radius: 20px; 
+    Cursor: pointer; 
+    Transition: transform 0.5s; 
+} 
+Header .navbar ul li a:hover{ 
+    Transform: translateY(-5px); 
+    Background: #fff; 
+    Color: #111; 
+} 
+ 
+#hamburger{ 
+    Position: fixed; 
+    Top: 28px; 
+    Right: 30px; 
+    Font-size: 25px; 
+    Background: #333; 
+    Color: #fff; 
+    Padding: 5px 10px; 
+    Cursor: pointer; 
+    Display: none; 
+} 
+ 
+ 
+/* ------------------------------------ Home section-------------------------------------------- */ 
+Section{ 
+    Min-height: 100vh; 
+    Padding: 1rem; 
+} 
+.home{ 
+    Display: flex; 
+    Justify-content: center; 
+    Flex-flow: column; 
+    Color: #fff; 
+    Padding: 0 15rem; 
+} 
+.home h3{ 
+    Font-size: 30px; 
+} 
+.home p{ 
+    Font-size: 20px; 
+    Color: #eee; 
+    Padding: 0 1rem; 
+} 
+.home h1{ 
+    Font-size: 45px;  
+} 
+.home h1 span{ 
+  Color: #ffff00; 
+} 
+ 
+/* ---------------------------------------------About section-----------------------------------=---- */ 
+.heading{ 
+    Text-align: center; 
+    Margin: 0px 10px; 
+    Font-size: 4rem ; 
+    Padding: 1rem; 
+    Border-bottom: .1rem solid #fff4; 
+    Color: #fff; 
+} 
+.about .heading  span{ 
+    Color: #ffff00; 
+  } 
+ 
+  .container1{ 
+    Padding: 0 15rem; 
+    Display: flex; 
+    Flex-direction: column; 
+  } 
+ 
+  .box1 h3{ 
+    Margin-top: 20px; 
+    Font-size: 30px; 
+    Margin-bottom: 10px; 
+    Color: #ffff00;   
+} 
+ 
+.box1{ 
+    Padding: 10px 15px; 
+    Line-height: 2; 
+    Font-size: 20px; 
+    Color: #aaa; 
+ } 
+ .box2 h3{ 
+    Margin-top: 20px; 
+    Font-size: 30px; 
+    Margin-bottom: 10px; 
+    Color: #ffff00;   
+} 
+.box2 p span{ 
+    Color: #ffff00; 
+} 
+.box2{ 
+    Padding: 10px 15px; 
+    Line-height: 2; 
+    Font-size: 20px; 
+    Color: #aaa; 
+ 
+} 
+.box3 h3{ 
+    Margin-top: 20px; 
+    Font-size: 30px; 
+    Margin-bottom: 10px; 
+    Color: #ffff00;   
+   } 
+ 
+   .box3{ 
+    Padding: 10px 15px; 
+    Line-height: 2; 
+    Font-size: 20px; 
+    Color: #aaa; 
+    Border-radius: none; 
+   } 
+ 
+ 
+   /* ------------------------------------------------project section---------------------------------------------*/ 
+ 
+ 
+.Project{ 
+    Padding: 50px 0px; 
+    Text-align: center; 
+} 
+/* project heading */ 
+.container h1{ 
+    Text-align: center; 
+    Margin: 0px 10px; 
+    Font-size: 4rem ; 
+    Border-bottom: .1rem solid #fff4; 
+    Color: #ffff00; 
+} 
+/*all project list- */ 
+.project-list{ 
+    Display: grid; 
+    Grid-template-columns: 1fr 1fr 1fr; 
+    Grid-gap: 40px; 
+    Margin-top: 50px; 
+} 
+/* setting project img section */ 
+.project-img{ 
+    Border-radius: 10px; 
+    Position: relative; 
+    Overflow: hidden; 
+} 
+/*setting poject image size*/ 
+.project-img img{ 
+    Width: 300px; 
+    Height: 200px; 
+    Border-radius: 20px; 
+    Transition: transform 0.5s; 
+} 
+/* setting all the images in systematically*/ 
+.container{ 
+        Display: flex; 
+        Flex-direction: column; 
+        Align-items: center; 
+        Justify-content: center; 
+        Margin-top: 20px; 
+} 
+/* -project description- */ 
+.project-description{ 
+    Width: 100%; 
+    Height: 0px; 
+    Background: linear-gradient(rgba(0,0,0,0.6),#ff004f); 
+    Position: absolute; 
+    Left: 0px; 
+    Bottom: 0px; 
+    Overflow: hidden; 
+    Display: flex; 
+    Align-items: center; 
+    Justify-content: center; 
+    Flex-direction: column; 
+    Text-align: center; 
+    Padding: 0px 40px; 
+    Font-size: 12px; 
+    Transition: height 0.5s; 
+    Color: #fff; 
+} 
+.project-description h3{ 
+    Font-weight: 600; 
+    Margin-bottom: 20px; 
+} 
+.project-description a{ 
+    Margin-top: 20px; 
+    Background: #ff004f; 
+    Font-size: 18px; 
+    Width: 60px; 
+    Height: 60px; 
+    Line-height: 66px; 
+    Border-radius: 50%; 
+    Background-color: #fff; 
+    Text-decoration: none; 
+    Text-align: center; 
+} 
+.project-description p{ 
+    Width: 60%; 
+} 
+.project-img:hover img{ 
+    Transform: scale(1.1); 
+} 
+.project-img:hover .project-description{ 
+    Height: 100%; 
+} 
+ 
+/* --------------------------------------------------contact section------------------------------------------ */ 
+ 
+.contact-section{ 
+    Display: flex; 
+    Align-items: center; 
+    Justify-content: center; 
+    Margin-left: 80px; 
+} 
+.contact-left-section { 
+   Flex-basis: 35%; 
+} 
+.contact-left-section h1{ 
+    Font-size: 50px;  
+    Color: #ffff00 
+} 
+.contact-left-section p{ 
+    Margin-top: 30px; 
+    Color: #aaa; 
+} 
+.contact-left-section p i{ 
+    Margin-right: 15px; 
+    Color: #ffff00; 
+    Font-size: 25px; 
+} 
+.social-media{ 
+    Display: flex; 
+    Gap: 20px; 
+    Margin-top: 30px; 
+    Font-size: 30px; 
+} 
+.social-media a{ 
+    Color: #fff; 
+    Transition: transform 0.5s; 
+} 
+ 
+.social-media a:hover{ 
+    Transform: translateY(-10px); 
+    Color: rgb(87, 87, 198); 
+} 
+.contact-right-section { 
+    Flex-basis: 60%; 
+ } 
+ .contact-right-section form{ 
+    Width: 100%; 
+ } 
+ Form input , form textarea{ 
+    Width: 100%; 
+    Border: 0; 
+    Outline: none; 
+    Background: #262626; 
+    Padding: 15px; 
+    Margin: 15px 0px; 
+    Color: #fff; 
+    Font-size: 18px; 
+    Border-radius: 6px; 
+ } 
+ Button{ 
+    Margin-top: 20px; 
+    Font-size: 20px; 
+    Background-color: #ff004f; 
+    Color: #fff; 
+    Font-weight: 400; 
+    Padding: 10px 22px; 
+    Border-radius: 10px; 
+    Border: none ; 
+    Cursor: pointer; 
+    Transition: transform 0.5s; 
+ } 
+ Button:hover{ 
+    Transform: translateY(-10px); 
+    Background-color: #fff; 
+    Color: #080808; 
+ } 
+ .navigation i{ 
+    Display: none; 
+ } 
+@media(max-width:1440px) { 
+   Html{ 
+    Font-size: 55%; 
+   } 
+   .project-img img{ 
+    Width: 250px; 
+    Height: 200px; 
+ } 
+} 
+ 
+@media(max-width:1024px) { 
+ 
+    .home{ 
+        Padding: 0rem 2rem; 
+    } 
+    .container1{ 
+        Padding: 0 5rem; 
+      } 
+    .contact-left-section h1{ 
+        Font-size: 35px;  
+    } 
+    .project-list{ 
+        Display: grid; 
+        Grid-template-columns: 1fr 1fr; 
+    } 
+    .project-img img{ 
+        Width: 220px; 
+        Height: 190px; 
+     } 
+    .contact-left-section { 
+        Flex-basis: 55%; 
+     }  
+     .contact-right-section form{ 
+        Width: 90%; 
+     } 
+     .project-description{ 
+        Font-size: 10px; 
+    } 
+    .project-description a{ 
+        Font-size: 15px; 
+        Line-height: 55px; 
+    } 
+    .project-description p{ 
+        Width: 70%; 
+    } 
+} 
+ 
+ 
+@media (max-width:768px){ 
+    Header{ 
+        Left: -120%; 
+    } 
+    #hamburger{ 
+        Display: block; 
+    } 
+    .home{ 
+        Padding: 1rem 4rem; 
+    } 
+    Body{ 
+        Padding: 0%; 
+    } 
+    .home h3{ 
+        Font-size: 25px; 
+    } 
+    .home p{ 
+        Font-size: 17px; 
+    } 
+    .home h1{ 
+        Font-size: 35px;  
+    } 
+} 
+ 
+@media(max-width:425px) { 
+ 
+ .container1{ 
+        Padding: 0 0; 
+   } 
+ 
+   .project-list{ 
+    Display: grid; 
+    Grid-template-columns: 1fr; 
+    Grid-gap: 40px; 
+    Margin-top: 50px; 
+  } 
+  .project-img img{ 
+    Width: 300px; 
+    Height: 200px; 
+ } 
+  .contact-section{ 
+    Display: flex; 
+    Flex-direction: column; 
+    Align-items: center; 
+    Justify-content: center; 
+    Margin-left: 2rem; 
+} 
+ 
+ Form input , form textarea{ 
+    Width: 100%; 
+    Border: 0; 
+    Outline: none; 
+    Background: #262626; 
+    Padding: 10px; 
+    Margin: 15px 0px; 
+    Color: #fff; 
+    Font-size: 18px; 
+    Border-radius: 6px; 
+    Display: flex; 
+    Align-items: center; 
+    Justify-content: center; 
+ } 
+ .contact-right-section form{ 
+    Width: 100%; 
+ } 
+} 
+@media(max-width:280px){ 
+    .project-img img{ 
+        Width: 230px; 
+        Height: 190px; 
+     } 
+}
