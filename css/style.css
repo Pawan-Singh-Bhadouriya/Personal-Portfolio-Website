@@ -175,8 +175,34 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px);
 }
-
-/* -------services-------- */
+/* ----------certificates---------- */
+#certificate{
+    padding: 50px 0;
+}
+.certificate-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top:50px ;
+}
+.cert{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.cert img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.cert:hover img{
+    transform: scale(1.1);
+}
+.cert:hover .layer{
+    height: 100%;
+}
+/* -------portfolio-------- */
 
 #portfolio{
     padding: 50px 0;
@@ -255,7 +281,7 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
-/* -------services-------- */
+/* -------contact-------- */
 
 .contact-left{
     flex-basis: 35%;
