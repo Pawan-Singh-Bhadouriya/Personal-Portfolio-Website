@@ -21,6 +21,10 @@ body {
 
 }
 
+.header-text p span{
+    color: #ff004f;
+}
+
 .container{
     padding: 10px 10%;
 }
