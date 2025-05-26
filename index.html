@@ -1,326 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Pawan Singh Bhadouriya, Web Developer and Programmer from Indore. Explore my projects, certifications, and skills."
+    />
+    <meta
+      name="keywords"
+      content="Pawan Singh Bhadouriya, portfolio, web developer, Indore, MCA, IIPS, DAVV, HTML, CSS, JavaScript, React, Python, Java"
+    />
+    <meta name="author" content="Pawan Singh Bhadouriya" />
     <title>Pawan Singh Bhadouriya-Personal Portfolio Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="./images/faviconImg.png">
-    <script src="https://kit.fontawesome.com/20f528de9a.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="./images/faviconImg.png" />
+    <script
+      src="https://kit.fontawesome.com/20f528de9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-<body>
+
+  </head>
+
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <p><span>P</span>awan.</p>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a> </li>
-                    <li><a href="#about">About Me</a> </li>
-                    <li><a href="#services">Services</a> </li>
-                    <li><a href="#certificate">Certificate</a> </li>
-                    <li><a href="#portfolio">Portfolio</a> </li>
-                    <li><a href="#contact">Contact</a> </li>
-                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>Hi, I'm<br><span>Pawan</span> Singh Bhadouriya<br>from Indore.</h1>
-                <p >I am a <span class="auto-typed"> </span></p>
-            </div>
+      <div class="container">
+        <nav>
+          <p><span>P</span>awan.</p>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#certificate">Certificate</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I'm<br /><span>Pawan</span> Singh Bhadouriya<br />from Indore.
+          </h1>
+          <p>I am a <span class="auto-typed"> </span></p>
         </div>
+      </div>
     </div>
     <!-- ------------about---------- -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/image4.png" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I’m a web development enthusiast with internship experience focused on creating and designing frontend layouts using HTML and CSS. Through these experiences, I’ve strengthened my skills in building clean and responsive user interfaces. I’ve also worked on several personal projects that reflect my understanding of web technologies. In addition to web development, I have knowledge of Python, C, C++, and Java, and I’m continuously working to grow my skill set.</p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/image4.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I’m a web development enthusiast with internship experience
+              focused on creating and designing frontend layouts using HTML and
+              CSS. Through these experiences, I’ve strengthened my skills in
+              building clean and responsive user interfaces. I’ve also worked on
+              several personal projects that reflect my understanding of web
+              technologies. In addition to web development, I have knowledge of
+              Python, C, C++, and Java, and I’m continuously working to grow my
+              skill set.
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience') ">Experience</p>
-                        <p class="tab-links" onclick="opentab('education') ">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab " id="skills">
-                        <ul>
-                            <li><span>Full Stack Web Development</span></li>
-                            <li><span>C Programming</span></li>
-                            <li><span>C++ Programming</span></li>
-                            <li><span>Python</span></li>
-                            <li><span>Java Script</span></li>
-                            <li><span>Java Programming</span></li>
-                            <li><span>React Js</span></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023</span><br>One month(June 2023-July 2023)Front end Web Development internship
-                                at Oasis Infobytes</li>
-                            <li><span>2023</span><br>One month(June 2023-July 2023)Front end Web Development internship
-                                at Bharat Intern</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021-Current</span><br>Pursuing MCA from International Institute of Professional
-                                Studies,Davv</li>
-                            <li><span>2020-2021</span><br>Completed 12th standards from The New Green Field Public
-                                Academy with 83.4%</li>
-                            <li><span>2018-2019</span><br>Completed 10th standards from The New Green Field Public
-                                Academy with 79% </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills',event)">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience',event) ">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education',event) ">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Full Stack Web Development</span></li>
+                <li><span>C Programming</span></li>
+                <li><span>C++ Programming</span></li>
+                <li><span>Python</span></li>
+                <li><span>Java Script</span></li>
+                <li><span>Java Programming</span></li>
+                <li><span>React Js</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023</span><br />One month(June 2023-July 2023)Front end
+                  Web Development internship at Oasis Infobytes
+                </li>
+                <li>
+                  <span>2023</span><br />One month(June 2023-July 2023)Front end
+                  Web Development internship at Bharat Intern
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-Current</span><br />Pursuing MCA from International
+                  Institute of Professional Studies,Davv
+                </li>
+                <li>
+                  <span>2020-2021</span><br />Completed 12th standards from The
+                  New Green Field Public Academy with 83.4%
+                </li>
+                <li>
+                  <span>2018-2019</span><br />Completed 10th standards from The
+                  New Green Field Public Academy with 79%
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- ------------------services------------------------------- -->
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Frontend Web Development</h2>
-                    <p>I can create responsive and interactive frontends using HTML, CSS, JavaScript, and frameworks
-                        like React.js and Bootstrap. </p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>Backend Web Development</h2>
-                    <p>With knowledge in Java, C, C++, and JavaScript, I can help you develop the backend of your web
-                        applications.</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h2>Software Developer</h2>
-                    <p>I can develop efficient, scalable, and maintainable software solutions tailored to your needs
-                        using modern programming languages and best practices.</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Web Development</h2>
+            <p>
+              I can create responsive and interactive frontends using HTML, CSS,
+              JavaScript, and frameworks like React.js and Bootstrap.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Backend Web Development</h2>
+            <p>
+              With knowledge in Java, C, C++, and JavaScript, I can help you
+              develop the backend of your web applications.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Software Developer</h2>
+            <p>
+              I can develop efficient, scalable, and maintainable software
+              solutions tailored to your needs using modern programming
+              languages and best practices.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
         </div>
+      </div>
     </div>
     <!-- -----------------Certificates---------------- -->
     <div id="certificate">
-        <div class="container">
-            <h1 class="sub-title">My Certificates</h1>
-            <div class="certificate-list">
-                <div class="cert">
-                    <img src="images/devtown.jpg" alt="">
-                    <div class="layer">
-                        <h3>Devtown Certificate</h3>
-                        <p>This is Certificate of participation in 7 days bootcamp program for creating Tinder clone by
-                            using html css and js</p>
-                        <a href="pdf/10wpLu-1.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="cert">
-                    <img src="images/devtown.jpg" alt="">
-                    <div class="layer">
-                        <h3>Devtown Certificate</h3>
-                        <p>This is Certificate of Appreciation by Devtown for attending the 7 days bootcamp program in
-                            which I create Tinder clone by using html css and js</p>
-                        <a href="pdf/zafPN-2.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="cert">
-                    <img src="images/Microsoft.jpg" alt="">
-                    <div class="layer">
-                        <h3>Microsoft Certificate</h3>
-                        <p>This is Certificate from Microsoft for attending the 7 days bootcamp program in which I
-                            create Tinder clone by using html css and js</p>
-                        <a href="pdf/1G55V6-2.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="cert">
-                    <img src="images/google.jpg" alt="">
-                    <div class="layer">
-                        <h3>Google Certificate</h3>
-                        <p>This is Certificate from Google for attending the 7 days bootcamp program in which I create
-                            Tinder clone by using html css and js</p>
-                        <a href="pdf/DOC-20230220-WA0004..pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="cert">
-                    <img src="images/google2.jpg" alt="">
-                    <div class="layer">
-                        <h3>Google Certificate</h3>
-                        <p>This is Certificate from Google for successfully completing the course on Python</p>
-                        <a href="pdf/Google Coursera Python Certificate.pdf" target="_blank"><i
-                                class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="cert">
-                    <img src="images/tcs-ion-logo-png_seeklogo-456113.png" alt="">
-                    <div class="layer">
-                        <h3>TCS iON Career Edge - Young Professional</h3>
-                        <p>This is Certificate from TCS for successfully completing the TCS iON Career Edge - Young
-                            Professional course </p>
-                        <a href="pdf/TCS ION CAREER EDGE CERTIFICATE.pdf" target="_blank"><i
-                                class="fa-solid fa-link"></i></a>
-                    </div>
-
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="certificate-list">
+          <div class="cert">
+            <img src="images/devtown.jpg" alt="" />
+            <div class="layer">
+              <h3>Devtown Certificate</h3>
+              <p>
+                This is Certificate of participation in 7 days bootcamp program
+                for creating Tinder clone by using html css and js
+              </p>
+              <a href="pdf/10wpLu-1.pdf" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
+          </div>
+          <div class="cert">
+            <img src="images/devtown.jpg" alt="" />
+            <div class="layer">
+              <h3>Devtown Certificate</h3>
+              <p>
+                This is Certificate of Appreciation by Devtown for attending the
+                7 days bootcamp program in which I create Tinder clone by using
+                html css and js
+              </p>
+              <a href="pdf/zafPN-2.pdf" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="cert">
+            <img src="images/Microsoft.jpg" alt="" />
+            <div class="layer">
+              <h3>Microsoft Certificate</h3>
+              <p>
+                This is Certificate from Microsoft for attending the 7 days
+                bootcamp program in which I create Tinder clone by using html
+                css and js
+              </p>
+              <a href="pdf/1G55V6-2.pdf" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="cert">
+            <img src="images/google.jpg" alt="" />
+            <div class="layer">
+              <h3>Google Certificate</h3>
+              <p>
+                This is Certificate from Google for attending the 7 days
+                bootcamp program in which I create Tinder clone by using html
+                css and js
+              </p>
+              <a href="pdf/DOC-20230220-WA0004..pdf" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="cert">
+            <img src="images/google2.jpg" alt="" />
+            <div class="layer">
+              <h3>Google Certificate</h3>
+              <p>
+                This is Certificate from Google for successfully completing the
+                course on Python
+              </p>
+              <a
+                href="pdf/Google Coursera Python Certificate.pdf"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="cert">
+            <img src="images/tcs-ion-logo-png_seeklogo-456113.png" alt="" />
+            <div class="layer">
+              <h3>TCS iON Career Edge - Young Professional</h3>
+              <p>
+                This is Certificate from TCS for successfully completing the TCS
+                iON Career Edge - Young Professional course
+              </p>
+              <a href="pdf/TCS ION CAREER EDGE CERTIFICATE.pdf" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- ------------portfolio--------- -->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Works</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work1.jpg">
-                    <div class="layer">
-                        <h3>Handwritten Notes Website</h3>
-                        <p>This website contains my handwritten notes for the student of BCA/MCA/BTECH/MTECH</p>
-                        <a href="https://pawan-singh-bhadouriya.github.io/Notes-Website/notes.html" target="_blank"><i
-                                class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work2.jpg">
-                    <div class="layer">
-                        <h3>Temperature convertor website</h3>
-                        <p>This website basically converts one temperature into another</p>
-                        <a href="https://pawan-singh-bhadouriya.github.io/Temperature-Convertor/index.html"
-                            target="_blank"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.rJlod_qHGR0PDG2VkrO23QHaE6&pid=Api&P=0&h=180">
-                    <div class="layer">
-                        <h3>Currency Convertor </h3>
-                        <p>This is a basic Currency Convertor Web App created using React js and tailwind</p>
-                        <a href="https://currency-convertor-lake-tau.vercel.app/"
-                            alt="The website is not available for now" target="_blank"><i
-                                class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img
-                        src="https://www.webassetscdn.com/avira/prod-blog/wp-content/uploads/2020/08/Browser-based-password-managers-vs.-dedicated-password-managers-1024x768.jpg">
-                    <div class="layer">
-                        <h3>Password Generator </h3>
-                        <p>This is a basic Password Generator Web App created using React js and tailwind</p>
-                        <a href="https://password-generator-flame-gamma.vercel.app/"
-                            alt="The website is not available for now" target="_blank"><i
-                                class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://freemiumicons.com/wp-content/uploads/2022/05/notes-app-icon.png">
-                    <div class="layer">
-                        <h3>Paste Web App </h3>
-                        <p>This is a basic Notes saver Web App created using React js and tailwind</p>
-                        <a href="https://paste-app-psi-blond.vercel.app/" target="_blank"><i
-                                class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1.jpg" />
+            <div class="layer">
+              <h3>Handwritten Notes Website</h3>
+              <p>
+                This website contains my handwritten notes for the students
+                pursuing BCA, MCA, BTech, or MTech
+              </p>
+              <a
+                href="https://pawan-singh-bhadouriya.github.io/Notes-Website/notes.html"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
-            <!-- <a href="" class="btn">See more</a> -->
+          </div>
+          <div class="work">
+            <img src="images/work2.jpg" />
+            <div class="layer">
+              <h3>Temperature convertor website</h3>
+              <p>
+                This website allows users to convert temperatures between units
+                like Celsius, Fahrenheit, and Kelvin
+              </p>
+              <a
+                href="https://pawan-singh-bhadouriya.github.io/Temperature-Convertor/index.html"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://tse2.mm.bing.net/th?id=OIP.rJlod_qHGR0PDG2VkrO23QHaE6&pid=Api&P=0&h=180"
+            />
+            <div class="layer">
+              <h3>Currency Convertor</h3>
+              <p>
+                This is a basic Currency Convertor Web App created using React
+                js and tailwind
+              </p>
+              <a
+                href="https://currency-convertor-lake-tau.vercel.app/"
+                alt="The website is not available for now"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://www.webassetscdn.com/avira/prod-blog/wp-content/uploads/2020/08/Browser-based-password-managers-vs.-dedicated-password-managers-1024x768.jpg"
+            />
+            <div class="layer">
+              <h3>Password Generator</h3>
+              <p>
+                This is a basic Password Generator Web App created using React
+                js and tailwind
+              </p>
+              <a
+                href="https://password-generator-flame-gamma.vercel.app/"
+                alt="The website is not available for now"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://freemiumicons.com/wp-content/uploads/2022/05/notes-app-icon.png"
+            />
+            <div class="layer">
+              <h3>Paste Web App</h3>
+              <p>
+                This is a basic Notes saver Web App created using React js and
+                tailwind
+              </p>
+              <a href="https://paste-app-psi-blond.vercel.app/" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <!-- <a href="" class="btn">See more</a> -->
+      </div>
     </div>
     <!-- ---------Contact--------- -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> pawansingh2m4@gmail.com</p>
-                    <p><i class="fa-sharp fa-solid fa-square-phone"></i> 7725084793</p>
-                    <div class="social-icons">
-                        <a href=" https://www.instagram.com/_.pawan_2m4._?r=nametag" target="_blank"> <i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/Pawan-Singh-Bhadouriya" target="_blank"> <i
-                                class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/pawan-singh-bhadouriya-376b85261" target="_blank"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                    <a href="pdf/Pawan's Resume.pdf" class="btn btn2" target="_blank">Download Cv</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i>
+              pawansingh2m4@gmail.com
+            </p>
+            <p><i class="fa-sharp fa-solid fa-square-phone"></i> 7725084793</p>
+            <div class="social-icons">
+              <a
+                href=" https://www.instagram.com/_.pawan_2m4._?r=nametag"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://github.com/Pawan-Singh-Bhadouriya"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/pawan-singh-bhadouriya-376b85261"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
             </div>
+            <a href="pdf/Pawan's Resume.pdf" class="btn btn2" target="_blank"
+              >Download Cv</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright &copy; Pawan Singh Bhadouriya</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Pawan Singh Bhadouriya</p>
+      </div>
     </div>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-
-        var sidemeu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemeu.style.right = "0";
-        }
-
-        function closemenu() {
-            sidemeu.style.right = "-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzk6gLfHQqEkokHLpVYEbdv8TdrKvom120dy3owcfYPG3DI6Zs-94VL9N9HSdYJxNuk/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById('msg')
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-    <script>
-        var typed = new Typed(".auto-typed",{
-            strings:["Software Engineer","Programmer","Web Developer"],
-            typeSpeed:35,
-            backSpeed:35,
-            loop:true
-        })
-    </script>
-</body>
-
+      var typed = new Typed(".auto-typed", {
+        strings: ["Software Engineer", "Programmer", "Web Developer"],
+        typeSpeed: 35,
+        backSpeed: 35,
+        loop: true,
+      });
+    </script> -->
+    
+<!-- --------------Toast------------------- -->
+    <div id="toast" class="toast"></div>
+        <script src="./js/typed-init.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/form-Submit.js"></script>
+  </body>
 </html>
